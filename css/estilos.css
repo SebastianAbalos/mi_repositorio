@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.botonAbona {
+    width: 250px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    background-color: #99D255;
+}
+.botonAbona:hover {
+    color:#99D255;
+    background-color: #BC0250;
+}
+.botonAfil {
+    width: 150px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    background-color: #BC0250;
+}
+.botonAfil:hover {
+    color:#BC0250;
+    background-color: #99D255;
+}
+
+body{
+    background-color: ghostwhite;
+
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+    /*border: 5px solid black;*/
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color:gray;
+}
+.sombreado a:hover{
+    color: #99D255;
+    background-color: #BC0250;
+
+}
+
+img{
+    margin-top: 80px;
+    margin-left: 140PX;
+    border-radius: 25px;
+}
+
+
+/*
+footer{
+    padding: 80px;
+    background-color: lightgrey;
+    margin-top: 50px;
+}
+.flex-container{
+    background-color: lightsteelblue;
+    padding: 30px;
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container div{
+    padding: 20px;
+    margin: 10px;
+    background-color: aliceblue;
+}*/
+img{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.col{
+    padding: 10px;
+}
+
+footer{
+    padding: 60px;
+    background-color:#BC0250;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+}
+.imagenBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.futuroCarrousel{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: grid;
+grid-template-columns: 1fr 2fr 1fr 2fr;
+grid-template-rows: 4fr 1fr 1fr 1fr;
+grid-template-areas:
+"imgbody imgbody imgbody imgbody"
+"ico1 asociate      ico2 urgencia"
+"ico3 atencionSocio ico4 consultas"
+"redesIndex redesIndex redesIndex redesIndex";
+gap: 20px;
+}
+.imgBody{
+    grid-area: imgbody;
+}
+.asociate{
+    grid-area: asociate;
+}
+.urgencia{
+    grid-area: urgencia;
+}
+.atencionSocio{
+    grid-area: atencionSocio;
+}
+.consultas{
+    grid-area: consultas;
+}
+.ico1{
+    grid-area: ico1;
+}
+.ico2{
+    grid-area: ico2;
+}
+.ico3{
+    grid-area: ico3;
+}
+
+.ico4{
+    grid-area: ico4;
+}
+.redesIndex{
+    grid-area: redesIndex;
+}
+@media (max-width:992px){
+.container{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "imgbody imgbody "
+    "ico1 asociate"
+    "ico2 urgencia"
+    "ico3 atencionSocio"
+    "ico4 consultas"
+    "redesIndex redesIndex";
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imgbody"
+        "ico1"
+        "asociate"
+        "ico2"
+        "urgencia"
+        "ico3"
+        "atencionSocio"
+        "ico4"
+        "consultas"
+        "redesIndex";
+        }
+    }
+

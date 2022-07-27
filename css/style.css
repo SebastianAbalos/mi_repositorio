@@ -44,3 +44,8 @@ footer{
 .borderCard{
     border: 4px solid #99D255;
 }
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

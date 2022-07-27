@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.botonAbona {
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    background-color: #99D255;
+}
+.botonAbona:hover {
+    color:#99D255;
+    background-color: #BC0250;
+}
+.botonAfil {
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    background-color: #BC0250;
+}
+.botonAfil:hover {
+    color:#BC0250;
+    background-color: #99D255;
+}
+a{
+    text-decoration: none;
+    color:gray;
+}
+.sombreadoHeader a:hover{
+    color: #99D255;
+    background-color: #BC0250;
+}
+
+footer{
+    padding: 60px;
+    background-color:#BC0250;
+}
+
+.bannerSedes{
+    height: 100%;
+    width: 100%;
+}
+.borderCard{
+    border: 4px solid #99D255;
+}

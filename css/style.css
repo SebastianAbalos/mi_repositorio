@@ -49,3 +49,36 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col{
+    padding: 10px;
+    align-items: center;
+}
+.box:hover{
+    transform: scale(2) translate(50%, 25%);
+    transition: all 3s;
+}
+
+.box2:hover{
+    transform: rotate(360deg) scale(2) ;
+    transition: all 2s;
+}
+.box3:hover{
+    transform: rotate(-360deg) scale(2) ;
+    transition: all 2s;
+}
+.imgClinicas{
+    width: 600px;
+    height: 450px;
+    margin: 10px;
+    vertical-align:baseline
+}
+.mapsCentros{
+    width: 600px;
+    height: 450px;
+    margin: 10px;
+}
